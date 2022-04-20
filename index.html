@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flag The Capture</title>
+    
+    <style>
+        
+                * {
+        font-family:verdana;
+        text-align: center;
+        position: relative;
+        user-select: none;
+        background-color:black;
+        color:white;
+        font-size:140%;
+        }
+
+        #preloader {
+  position: fixed;
+  background-color: black;
+  color:white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:99;
+
+}
+#preloader img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+        
+              button {
+          margin-top:4.8vh;
+
+          background-color:#636363;
+        }
+
+        button:hover{
+          background-color:black;
+        }
+    </style>
+    
+    </head>
+
+<body>
+    
+    <div id="preloader"> <img src="FTCpreloader.gif" alt="Flag The Capture" onclick='document.getElementById("preloader").remove()'> 
+    </div>
+    <h1>Welcome to Mark Bosco's<br>FLAG THE CAPTURE<br>game.</h1>
+    <h1>Can you solve this?</h1>
+    <button onclick="var audio = new Audio('./FlagTheCapture1.mp3');setTimeout(function(){document.location.href='https://www.google.com'}, 40000);audio.play();this.remove()">Start Audio</button>
+    </body>
+
+</html>
